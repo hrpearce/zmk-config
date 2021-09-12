@@ -41,7 +41,7 @@
 	&kp Q      &kp W      &kp F       &kp P        &kp B          &kp J &kp L       &kp U       &kp Y      &kp SQT
 	&hm LGUI A &hm LALT R &hm LCTRL S &hm LSHFT T  &kp G          &kp M &hm RSHFT N &hm RCTRL E &hm LALT I &hm RGUI O
 	&kp Z      &kp X      &kp C       &kp D        &kp V          &kp K &kp H       &kp COMMA   &kp DOT    &kp FSLH
-	           &lt NAV TAB   &lt NUM SPACE   &lt SYM RET          &lt FUN ESC  &lt MSE BSPC  &lt MED DEL
+	           &lt NAV TAB   &lt NUM SPACE   &lt MED RET          &lt FUN ESC  &lt MSE BSPC  &lt SYM DEL
             >;
         };
         num_layer {
@@ -54,10 +54,10 @@
         };
         sym_layer {
             bindings = <
-	&kp NON_US_HASH &kp HASH     &kp APOS   &kp DQT    &kp AT            &trans     &trans     &trans     &trans     &trans
-	&kp QMARK       &kp EXCL     &kp SEMI   &kp COLON  &kp UNDER         &trans     &kp RSHFT  &kp RCTRL  &kp LALT   &kp RGUI
-	&kp GRAVE       &kp PIPE     &kp BSLH   &kp FSLH   &kp MINUS         &trans     &trans     &trans     &trans     &trans
-	                             &trans     &trans     &trans            &trans     &trans     &trans
+	&trans     &trans     &trans     &trans     &trans                 &kp AT     &kp APOS   &kp DQT    &kp HASH   &kp BSLH
+	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans                 &kp PIPE   &kp SEMI   &kp COLON  &kp APOS   &kp DQT
+	&trans     &trans     &trans     &trans     &trans                 &kp UNDER  &kp LPAR   &kp RPAR   &kp EXCL   &kp QMARK
+	                      &kp BSLH   &trans     &trans                 &trans     &trans     &trans
             >;
         };
         fun_layer {
