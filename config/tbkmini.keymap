@@ -78,7 +78,7 @@
         };
         mse_layer {
             bindings = <
-	&trans     &trans     &trans     &trans      &trans            &trans   &kp LBKT   &kb RBKT   &kp STAR   &kp CARET
+	&trans     &trans     &trans     &trans      &trans            &kp PLUS   &trans     &trans     &kp STAR   &kp CARET
 	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT   &trans            &kp EQUAL  &kp LPAR   &kp RPAR   &kp UNDER  &kp AMPS
 	&trans     &trans     &trans     &trans      &trans            &kp MINUS  &kp LT     &kp GT     &kp FSLH   &kp DLLR
 	                      &trans     &trans      &trans            &trans     &trans     &trans
