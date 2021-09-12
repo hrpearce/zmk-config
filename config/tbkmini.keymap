@@ -86,10 +86,10 @@
         };
         med_layer {
             bindings = <
-	&trans     &trans     &trans     &trans     &trans                       &kp K_VOL_UP   &trans      &trans      &trans     &reset
-	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans                       &kp K_MUTE     &kp K_PREV  &kp K_PP    &kp K_NEXT &trans
-	&trans     &trans     &trans     &trans     &trans                       &kp K_VOL_DN   &trans      &kp K_STOP2 &trans     &trans
-	                      &trans     &trans     &trans                       &trans         &trans      &trans
+	&reset   &trans   &trans    &trans     &kp K_LOCK   &trans &trans     &trans       &trans       &trans
+	&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans       &trans &kp K_PREV &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT
+	&trans   &trans   &trans    &trans     &trans       &trans &trans     &trans       &trans       &trans
+	                  &trans   &trans   &trans                 &kp K_STOP2 &kp K_PP &kp &trans
             >;
         };
     };
