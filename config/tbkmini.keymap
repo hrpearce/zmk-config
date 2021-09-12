@@ -70,10 +70,10 @@
         };
         nav_layer {
             bindings = <
-	&reset   &trans   &trans    &trans     &kp K_LOCK   &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE &kp K_AGAIN
-	&kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans       &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT   &kp CAPS
-	&trans   &trans   &trans    &trans     &trans       &kp HOME   &kp PG_DN &kp PG_UP  &kp END     &kp INS
-	                  &trans   &trans   &trans                 &kp RET &kp BSPC &kp DEL
+	&reset     &kp END    &kp UP     &kp HOME    &kp PG_UP         &trans     &trans     &trans     &trans     &trans
+	&K_APP     &kp LEFT   &kp DOWN   &kp RIGHT   &kp PG_DN         &trans     &kp RSHFT  &kp RCTRL  &kp LALT   &kp RGUI
+	&kp K_UNDO &kp K_CUT  &kp K_COPY &kp K_PASTE &kp K_AGAIN       &trans     &trans     &trans     &trans     &trans
+	                      &trans     &trans     &trans             &trans     &trans     &trans
             >;
         };
         mse_layer {
