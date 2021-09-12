@@ -54,10 +54,10 @@
         };
         sym_layer {
             bindings = <
-	&kp RBRC  &kp AMPS &kp STAR  &kp LPAR  &kp LBRC        &kp K_LOCK &trans  &trans     &trans   &reset
-	&kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS        &trans &kp RSHFT  &kp RCTRL  &kp LALT  &kp RGUI
-	&kp TILDE &kp EXCL &kp AT    &kp HASH  &kp PIPE        &trans &trans  &trans &trans &trans
-	                  &kp LPAR  &kp RPAR   &kp UNDER              &trans &trans &trans
+	&kp NON_US_HASH &kp HASH     &kp APOS   &kp DQT    &kp AT            &trans     &trans     &trans     &trans     &trans
+	&kp QMARK       &kp EXCL     &kp SEMI   &kp COLON  &kp UNDER         &trans     &kp RSHFT  &kp RCTRL  &kp LALT   &kp RGUI
+	&kp GRAVE       &kp PIPE     &kp BSLH   &kp FSLH   &kp MINUS         &trans     &trans     &trans     &trans     &trans
+	                             &trans     &trans     &trans            &trans     &trans     &trans
             >;
         };
         fun_layer {
