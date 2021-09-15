@@ -54,7 +54,7 @@
         };
         sym_layer {
             bindings = <
-	&trans     &trans     &trans     &trans     &trans                 &kp GRV    &kp LBRC          &kp AMPS   &kp RBRC   &kp DQT
+	&trans     &trans     &trans     &trans     &trans                 &trans     &trans     &trans     &trans     &trans
 	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans                 &kp PIPE   &kp LPAR          &kp AT     &kp RPAR   &kp COLON
 	&trans     &trans     &trans     &trans     &trans                 &kp DLLR   &kp NON_US_HASH   &kp HASH   &kp EXCL   &kp QMARK
 	                      &kp BSLH   &trans     &trans                 &trans     &trans     &trans
