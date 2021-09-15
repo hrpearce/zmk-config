@@ -79,7 +79,7 @@
         mse_layer {
             bindings = <
 	&trans     &trans     &trans     &trans      &trans            &kp PLUS   &kp LBKT   &kp STAR   &kp RBKT   &kp CARET
-	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT   &trans            &kp UNDER  &kp LPAR   &kp EQUAL  &kp RBAR   &kp SEMI
+	&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT   &trans            &kp UNDER  &kp LPAR   &kp EQUAL  &kp RPAR   &kp SEMI
 	&trans     &trans     &trans     &trans      &trans            &kp MINUS  &kp LT     &kp FSLH   &kp GT     &kp BSLH
 	                      &trans     &trans      &trans            &trans     &trans     &trans
             >;
