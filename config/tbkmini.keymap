@@ -45,7 +45,7 @@ behaviors {
 		label = "CUSTOM_HOLD_SHIFT";
 		#binding-cells = <2>;
 		tappping-term-ms = <180>
-		quick_tap_ms = <0>;
+		quick_tap_ms = <300>;
 		flavor = "tap-preferred";
 		bindings = <&kp>, <&kp>;
 		};
