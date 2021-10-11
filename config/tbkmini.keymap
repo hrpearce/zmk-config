@@ -40,12 +40,12 @@ behaviors {
 		flavor = "tap-preferred";
 		bindings = <&kp>, <&kp>;
 	};
-	hs: custom_hold_shift {
+	hmc: hold_mods_custom {
 		compatible = "zmk,behavior-hold-tap";
-		label = "CUSTOM_HOLD_SHIFT";
+		label = "HOLD_MODS_CUSTOM";
 		#binding-cells = <2>;
-		tappping-term-ms = <180>
-		quick_tap_ms = <300>;
+		tappping-term-ms = <180>;
+		quick_tap_ms = <0>;
 		flavor = "tap-preferred";
 		bindings = <&kp>, <&kp>;
 		};
@@ -56,9 +56,9 @@ keymap {
 
 	default_layer {
 		bindings = <
-		&kp Q       &kp W       &kp F        &kp P        &kp B           &kp J     &kp L        &kp U           &kp Y         &hs SQT DQT
+		&kp Q       &kp W       &kp F        &kp P        &kp B           &kp J     &kp L        &kp U           &kp Y         &hmc SQT DQT
 		&hmr LGUI A &hmr LALT R &hmi LCTRL S &hmi LSHFT T &kp G           &kp M     &hmi RSHFT N &hmi RCTRL E    &hmr LALT I   &hmr RGUI O
-		&kp Z       &kp X       &kp C        &kp D        &kp V           &kp K     &kp H        &hs COMMA EXCL  &hs DOT QMARK &hs SEMI COLON
+		&kp Z       &kp X       &kp C        &kp D        &kp V           &kp K     &kp H        &hmc COMMA EXCL  &hmc DOT QMARK &hmc SEMI COLON
 		            &lt MSE TAB   &lt NUM SPACE   &lt FUN RET             &lt MED ESC  &lt SYM BSPC  &lt NAV DEL
 		>;
 	};
@@ -72,10 +72,10 @@ keymap {
 	};
 	sym_layer {
 		bindings = <
-		&reset     &trans     &trans     &trans     &trans             &kp PLUS   &hs LBKT LBRC &hs STAR CARET &hs RBKT RBRC &kp AT
-		&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans             &kp UNDER  &kp LPAR      &kp EQUAL      &kp RPAR      &kp DLLR
-		&trans     &trans     &trans     &trans     &trans             &kp MINUS  &kp LT        &hs FSLH BSLH  &kp GT        &kp AMPS
-		                      &trans     &trans     &trans             &trans     &trans        &trans
+		&reset     &trans     &trans     &trans     &trans             &kp PLUS   &hmc LBKT LBRC &hmc STAR CARET &hmc RBKT RBRC &kp AT
+		&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans             &kp UNDER  &kp LPAR       &kp EQUAL       &kp RPAR       &kp DLLR
+		&trans     &trans     &trans     &trans     &trans             &kp MINUS  &kp LT         &hmc FSLH BSLH  &kp GT         &kp AMPS
+		                      &trans     &trans     &trans             &trans     &trans         &trans
 		>;
 	};
 	fun_layer {
