@@ -39,15 +39,6 @@ behaviors {
 		quick_tap_ms = <0>;
 		flavor = "tap-preferred";
 		bindings = <&kp>, <&kp>;
-	};
-	hmc: hold_mods_custom {
-		compatible = "zmk,behavior-hold-tap";
-		label = "HOLD_MODS_CUSTOM";
-		#binding-cells = <2>;
-		tappping-term-ms = <180>;
-		quick_tap_ms = <0>;
-		flavor = "tap-preferred";
-		bindings = <&kp>, <&kp>;
 		};
 	};
 
@@ -56,25 +47,25 @@ keymap {
 
 	default_layer {
 		bindings = <
-		&kp Q       &kp W       &kp F        &kp P        &kp B           &kp J     &kp L        &kp U           &kp Y         &hmc SQT DQT
-		&hmr LGUI A &hmr LALT R &hmi LCTRL S &hmi LSHFT T &kp G           &kp M     &hmi RSHFT N &hmi RCTRL E    &hmr LALT I   &hmr RGUI O
-		&kp Z       &kp X       &kp C        &kp D        &kp V           &kp K     &kp H        &hmc COMMA EXCL  &hmc DOT QMARK &hmc SEMI COLON
+		&kp Q       &kp W       &kp F        &kp P        &kp B           &kp J     &kp L        &kp U            &kp Y          &hmr SQT DQT
+		&hmr LGUI A &hmr LALT R &hmi LCTRL S &hmi LSHFT T &kp G           &kp M     &hmi RSHFT N &hmi RCTRL E     &hmr LALT I    &hmr RGUI O
+		&kp Z       &kp X       &kp C        &kp D        &kp V           &kp K     &kp H        &hmi COMMA EXCL  &hmr DOT QMARK &hmr SEMI COLON
 		            &lt MSE TAB   &lt NUM SPACE   &lt FUN RET             &lt MED ESC  &lt SYM BSPC  &lt NAV DEL
 		>;
 	};
 	num_layer {
 		bindings = <
-		&hmc TILDE GRAVE &kp N7    &kp N8    &kp N9    &kp COMMA        &trans     &trans     &trans    &trans   &reset
+		&hmr TILDE GRAVE &kp N7    &kp N8    &kp N9    &kp COMMA        &trans     &trans     &trans    &trans   &reset
 		&kp NON_US_HASH  &kp N4    &kp N5    &kp N6    &kp N0           &trans     &kp RSHFT  &kp RCTRL &kp LALT &kp RGUI
-		&hmc PRCNT HASH  &kp N1    &kp N2    &kp N3    &kp DOT          &trans     &trans     &trans    &trans   &trans
-		                          &trans    &trans    &trans           &trans     &trans     &trans
+		&hmr PRCNT HASH  &kp N1    &kp N2    &kp N3    &kp DOT          &trans     &trans     &trans    &trans   &trans
+		                           &trans    &trans    &trans           &trans     &trans     &trans
 		>;
 	};
 	sym_layer {
 		bindings = <
-		&reset     &trans     &trans     &trans     &trans             &kp PLUS   &hmc LBKT LBRC &hmc STAR CARET &hmc RBKT RBRC &kp AT
+		&reset     &trans     &trans     &trans     &trans             &kp PLUS   &hmi LBKT LBRC &hmi STAR CARET &hmr RBKT RBRC &kp AT
 		&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans             &kp UNDER  &kp LPAR       &kp EQUAL       &kp RPAR       &kp DLLR
-		&trans     &trans     &trans     &trans     &trans             &kp MINUS  &kp LT         &hmc FSLH BSLH  &kp GT         &kp AMPS
+		&trans     &trans     &trans     &trans     &trans             &kp MINUS  &kp LT         &hmi FSLH BSLH  &kp GT         &kp AMPS
 		                      &trans     &trans     &trans             &trans     &trans         &trans
 		>;
 	};
