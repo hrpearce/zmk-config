@@ -40,9 +40,9 @@ behaviors {
 		flavor = "tap-preferred";
 		bindings = <&kp>, <&kp>;
 	};
-	hs: hold_shift {
+	hs: custom_hold_shift {
 		compatible = "zmk,behavior-hold-tap";
-		label = "HOLD_SHIFT";
+		label = "CUSTOM_HOLD_SHIFT";
 		#binding-cells = <2>;
 		tappping-term-ms = <180>
 		quick_tap_ms = <0>;
