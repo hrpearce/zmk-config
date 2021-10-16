@@ -21,13 +21,20 @@ chosen {
 	zmk,matrix_transform = &skeletyl_transform;
 	};
 
+/* 					       KEY POSITIONS
+	| k01  | k02  | k03  | k04  | k05  |                  | k45  | k44  | k43  | k42  | k41  |
+	| k11  | k12  | k13  | k14  | k15  |                  | k55  | k54  | k53  | k52  | k51  |
+	| k21  | k22  | k23  | k24  | k25  |                  | k65  | k64  | k63  | k62  | k61  |
+	              | k33  | k34  | k31  |                  | k71  | k74  | k73  |
+*/
+
 combos {
 	compatible = "zmk,combos";
 	combo_caps {
 		timeout-ms = <50>;
-		key-position = <2 3 4>;
-		layers = <DEFAULT>;
+		key-positions = <2 3 4>;
 		bindings = <&kp CAPS>;
+		layers = <DEFAULT>;
 		};
 	};
 
@@ -84,14 +91,14 @@ keymap {
 		&kp F12    &kp F7     &kp F8     &kp F9     &trans             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 		&kp F11    &kp F4     &kp F5     &kp F6     &trans             &trans       &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI
 		&kp F10    &kp F1     &kp F2     &kp F3     &trans             &trans       &trans       &trans       &trans       &trans
-		                      &trans     &trans     &trans             &kp K_LOCK   &trans       &bt BT_CLR
+		                      &trans     &trans     &trans             &trans       &trans       &bt BT_CLR
 		>;
 	};
 	nav_layer {
 		bindings = <
 		&trans     &trans     &trans     &trans     &trans             &trans     &kp LC(LEFT)     &kp LC(DOWN)      &kp LC(UP)      &kp LC(RIGHT)
 		&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans             &trans     &kp LEFT         &kp DOWN          &kp UP          &kp RIGHT
-		&kp LC(Z)  &kp LC(X)  &kp LC(C)  &trans     &kp LC(V)          &trans     &kp LC(LS(LEFT)) &kp LC(LS(DOWN))  &kp LC(LS(UP))  &kp LC(LS(RIGHT))
+		&kp LC(Z)  &kp LC(X)  &kp LC(C)  &trans     &kp LC(V)          &trans     &kp LA(LEFT)     &kp LA(DOWN)      &kp LA(UP)      &kp LA(RIGHT)
 		                      &trans     &trans     &trans             &trans     &trans           &trans
 		>;
 	};
