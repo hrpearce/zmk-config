@@ -21,6 +21,15 @@ chosen {
 	zmk,matrix_transform = &skeletyl_transform;
 	};
 
+combos {
+	compatible = "zmk,combos";
+	combo_caps {
+		timeout-ms = <50>;
+		key-position = <1 2 3>;
+		bindings = <&kp CAPS>;
+		};
+	};
+
 behaviors {
 	hmi: homerow_mods_index {
 		compatible = "zmk,behavior-hold-tap";
@@ -72,7 +81,7 @@ keymap {
 	fun_layer {
 		bindings = <
 		&kp F12    &kp F7     &kp F8     &kp F9     &trans             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-		&kp F11    &kp F4     &kp F5     &kp F6     &kp CAPS           &trans       &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI
+		&kp F11    &kp F4     &kp F5     &kp F6     &trans             &trans       &kp RSHFT    &kp RCTRL    &kp LALT     &kp RGUI
 		&kp F10    &kp F1     &kp F2     &kp F3     &trans             &trans       &trans       &trans       &trans       &trans
 		                      &trans     &trans     &trans             &kp K_LOCK   &trans       &bt BT_CLR
 		>;
