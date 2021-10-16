@@ -26,7 +26,7 @@ combos {
 	combo_caps {
 		timeout-ms = <50>;
 		key-position = <2 3 4>;
-		layers = <DEFAULT>
+		layers = <DEFAULT>;
 		bindings = <&kp CAPS>;
 		};
 	};
