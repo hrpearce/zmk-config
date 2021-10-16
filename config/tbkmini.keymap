@@ -105,8 +105,8 @@ keymap {
 	};
 	mse_layer {
 		bindings = <
-		&trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trans
-		&trans     &trans     &mkp LCLK  &mkp RCLK  &trans             &trans     &kp RSHFT  &kp RCTRL  &kp LALT   &kp RGUI
+		&trans     &mkp MCLK  &mkp LCLK  &mkp RCLK  &trans             &trans     &trans     &trans     &trans     &trans
+		&kp LGUI   &kp LALT   &kp LCTRL  &kp LSHFT  &trans             &trans     &kp RSHFT  &kp RCTRL  &kp LALT   &kp RGUI
 		&trans     &trans     &trans     &trans     &trans             &trans     &trans     &trans     &trans     &trans
 		                      &trans     &trans     &trans             &trans     &trans     &trans
 		>;
